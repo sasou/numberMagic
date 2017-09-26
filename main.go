@@ -88,7 +88,7 @@ func SaveDistinctStrToFile(strData *string, fileName string) {
 	}
 	defer f.Close()
 	for str, _ := range strMap {
-		f.WriteString(str)
+		f.WriteString(str + "\n")
 	}
 
 }
